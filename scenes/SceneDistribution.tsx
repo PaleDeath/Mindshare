@@ -18,13 +18,13 @@ import { splitToChars } from "@/components/shared/SplitText";
 // angle = (360/7)*i − 90° → first avatar at top of orbit.
 // Pre-computed so server and client render identical HTML (no hydration diff).
 const AVATARS = [
-  { top: 31.0, left: 72.0, initials: "KL" },
-  { top: 38.2, left: 83.7, initials: "NR" },
-  { top: 54.2, left: 86.6, initials: "YS" },
-  { top: 67.1, left: 78.5, initials: "AM" },
-  { top: 67.1, left: 65.5, initials: "TJ" },
-  { top: 54.2, left: 57.4, initials: "CK" },
-  { top: 38.2, left: 60.3, initials: "RB" },
+  { top: 31.0, left: 72.0, initials: "A8" },   // Alloc8
+  { top: 38.2, left: 83.7, initials: "AIB" },  // All In Bitcoin
+  { top: 54.2, left: 86.6, initials: "PA" },   // Polkassembly
+  { top: 67.1, left: 78.5, initials: "CM" },   // Camelot (B2B)
+  { top: 67.1, left: 65.5, initials: "AR" },   // Arbitrum (Grant)
+  { top: 54.2, left: 57.4, initials: "C3" },   // Catastroph3y
+  { top: 38.2, left: 60.3, initials: "SH" },   // SMHB NFT
 ];
 
 const RINGS = [1, 2, 3, 4, 5];
@@ -151,7 +151,7 @@ export function SceneDistribution() {
 
         {/* Tags */}
         <div className="mt-10 flex flex-wrap gap-3">
-          {["SEO", "Content Strategy", "Social Media", "KOL Networks", "Community Growth"].map((tag) => (
+          {["KOL Outreach", "Content & SEO", "B2B Partnerships", "Community Building", "Event Management"].map((tag) => (
             <span
               key={tag}
               className="dist-label font-mono text-xs text-dim border border-noise px-3 py-1.5 tracking-wider"
